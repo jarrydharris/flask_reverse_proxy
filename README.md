@@ -19,3 +19,23 @@ or install without the script from instructions
 - [Terraform](https://developer.hashicorp.com/terraform/downloads)
 - [Poetry](https://python-poetry.org/docs/#installing-with-the-official-installer)
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
+
+## Terraform 
+
+The terraform directory contains a number of simple config setups to be used or deleted as necessary.
+
+- Azure VM SSH
+- Docker nginx
+
+## Resources
+
+https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-python-to-azure-app-service
+
+## Environment variables
+
+Flask
+
+```shell
+export FLASK_APP="startup:app"
+export FLASK_ENV="development"
+```

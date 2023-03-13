@@ -1,5 +1,8 @@
 # Terraform
-*/.terraform/
-*.lock*
+*.terraform/
+*terraform/*/.terraform.lock.hcl
 *.destroy*
 *.tfstate*
+
+# pytest
+.pytest_cache
