@@ -12,8 +12,6 @@ WORKDIR /code
 COPY poetry.lock pyproject.toml ./
 COPY ./src/app  ./
 
-#RUN poetry export --dev --without-hashes --no-interaction --no-ansi -f requirements.txt -o requirements.txt
-#RUN pip install --prefix=/runtime --force-reinstall --ignore-installed -r requirements.txt
 RUN poetry install --no-root
 
 EXPOSE 8080
