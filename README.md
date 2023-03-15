@@ -1,6 +1,6 @@
 # Python Cloud Boilerplate
 
-Reusable boilerplate code for personal python projects hosted on cloud. 
+Reusable boilerplate code for personal python projects hosted on cloud.
 
 ## Setup
 

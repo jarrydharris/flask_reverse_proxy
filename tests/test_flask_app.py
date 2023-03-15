@@ -1,4 +1,4 @@
-from src.startup import create_app
+from src.app.appEntry import create_app
 
 
 def test_config():

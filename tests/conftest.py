@@ -1,6 +1,6 @@
 import pytest
 
-from src.startup import create_app
+from src.app.appEntry import create_app
 
 
 @pytest.fixture
