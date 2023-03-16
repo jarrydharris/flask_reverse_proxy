@@ -20,13 +20,13 @@ or install without the script from instructions
 - [Poetry](https://python-poetry.org/docs/#installing-with-the-official-installer)
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
 
-## Terraform 
+## Terraform
 
 The terraform directory contains a number of simple config setups to be used or deleted as necessary.
 
 - Azure VM SSH
 - Docker nginx
-- TODO: Set up terraform to host flask on azure app service 
+- TODO: Set up terraform to host flask on azure app service
 
 ## GithubActions
 
@@ -35,4 +35,3 @@ The terraform directory contains a number of simple config setups to be used or 
 ## Resources
 
 https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-python-to-azure-app-service
-

@@ -28,11 +28,12 @@ def create_app(test_config=None):
     def hello():
         return "Hello, World!"
 
-    @app.route('/')
+    @app.route("/")
     def index():
         return render_template("index.html")
 
     return app
+
 
 # if __name__ == "__main__":
 #     app = create_app()
