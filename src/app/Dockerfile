@@ -9,5 +9,5 @@ WORKDIR /code
 COPY poetry.lock pyproject.toml ./
 COPY ./src/app  ./
 RUN poetry install --no-root
-EXPOSE 8080
-CMD ["poetry", "run", "waitress-serve", "--host", "127.0.0.1", "--call", "appEntry:create_app"]
+EXPOSE 5000
+CMD ["poetry", "run", "waitress-serve", "--port", "5000", "--call", "appEntry:create_app"]

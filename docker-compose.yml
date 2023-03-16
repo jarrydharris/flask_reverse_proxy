@@ -1,0 +1,18 @@
+services:
+    flask:
+        build:
+            context: ./
+            dockerfile: ./src/app/Dockerfile
+        command: poetry run waitress-serve --listen 0.0.0.0:5000 --call appEntry:create_app
+        container_name: flask-app
+        ports:
+            - 5000
+    nginx:
+        build:
+            context: ./
+            dockerfile: ./src/nginx/Dockerfile
+        container_name: nginx
+        ports:
+            - 80:80
+        depends_on:
+            - flask
