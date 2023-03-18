@@ -1,10 +1,10 @@
-# Python Cloud Boilerplate
+# Flask Reverse Proxy Boilerplate
 
-Reusable boilerplate code for personal python projects hosted on cloud.
+Reusable boilerplate code for personal python projects that require your own settings for routing traffic. It is multicontainer with nginx in one and wsgi+flask in another to allow handling web traffic and app scaling seperately. 
 
 ## Setup
 
-Currently only a setup script for Ubuntu 22.04.2 LTS
+Currently only a setup script for Ubuntu 22.04.2 LTS 
 
 To get started by installing terraform, poetry and docker, run the setup shell script.
 
@@ -16,22 +16,6 @@ sudo bash ./linux_setup.sh
 
 or install without the script from instructions
 
-- [Terraform](https://developer.hashicorp.com/terraform/downloads)
 - [Poetry](https://python-poetry.org/docs/#installing-with-the-official-installer)
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
 
-## Terraform
-
-The terraform directory contains a number of simple config setups to be used or deleted as necessary.
-
-- Azure VM SSH
-- Docker nginx
-- TODO: Set up terraform to host flask on azure app service
-
-## GithubActions
-
-- TODO: push, release and teardown using terraform
-
-## Resources
-
-https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-python-to-azure-app-service
